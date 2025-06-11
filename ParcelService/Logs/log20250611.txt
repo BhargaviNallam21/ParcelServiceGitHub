@@ -1,0 +1,284 @@
+2025-06-11 13:16:56.556 -04:00 [INF] User profile is available. Using 'C:\Users\bharg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-11 13:16:57.451 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-11 13:16:57.453 -04:00 [INF] Hosting environment: Development
+2025-06-11 13:16:57.453 -04:00 [INF] Content root path: C:\Users\bharg\source\repos\ParcelService\ParcelService
+2025-06-11 13:16:57.689 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/index.html - null null
+2025-06-11 13:16:58.838 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-11 13:16:58.838 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_vs/browserLink - null null
+2025-06-11 13:16:58.838 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/index.html - 200 null text/html;charset=utf-8 1170.3151ms
+2025-06-11 13:16:58.854 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 8.2542ms
+2025-06-11 13:16:58.945 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_vs/browserLink - 200 null text/javascript; charset=UTF-8 108.571ms
+2025-06-11 13:16:58.978 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - null null
+2025-06-11 13:16:59.342 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 363.2599ms
+2025-06-11 13:18:11.470 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=3 - null null
+2025-06-11 13:18:12.075 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.Get (ParcelService)'
+2025-06-11 13:18:12.170 -04:00 [INF] Route matched with {action = "Get", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:18:17.208 -04:00 [INF] Executed DbCommand (218ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+ORDER BY [p].[CreatedDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-06-11 13:18:17.641 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ParcelService.DTO.ParcelDTO, ParcelService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-11 13:18:17.688 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.Get (ParcelService) in 5510.6038ms
+2025-06-11 13:18:17.689 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.Get (ParcelService)'
+2025-06-11 13:18:17.705 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=3 - 200 null application/json; charset=utf-8 6235.6776ms
+2025-06-11 13:18:29.732 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=10 - null null
+2025-06-11 13:18:29.745 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.Get (ParcelService)'
+2025-06-11 13:18:29.747 -04:00 [INF] Route matched with {action = "Get", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:18:29.853 -04:00 [INF] Executed DbCommand (29ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+ORDER BY [p].[CreatedDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-06-11 13:18:29.862 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ParcelService.DTO.ParcelDTO, ParcelService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-11 13:18:29.866 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.Get (ParcelService) in 118.1088ms
+2025-06-11 13:18:29.866 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.Get (ParcelService)'
+2025-06-11 13:18:29.869 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 136.2236ms
+2025-06-11 13:19:59.838 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1016 - null null
+2025-06-11 13:19:59.873 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:19:59.908 -04:00 [INF] Route matched with {action = "delete", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] delete(Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:20:00.439 -04:00 [INF] Executed DbCommand (20ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+WHERE [p].[ParcelId] = @__p_0
+2025-06-11 13:20:00.756 -04:00 [INF] Executed DbCommand (43ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Parcels]
+OUTPUT 1
+WHERE [ParcelId] = @p0;
+2025-06-11 13:20:00.818 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-11 13:20:00.847 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.delete (ParcelService) in 938.4297ms
+2025-06-11 13:20:00.847 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:20:00.848 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1016 - 200 null application/json; charset=utf-8 1015.8327ms
+2025-06-11 13:20:18.797 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1015 - null null
+2025-06-11 13:20:18.802 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:20:18.802 -04:00 [INF] Route matched with {action = "delete", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] delete(Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:20:18.839 -04:00 [INF] Executed DbCommand (18ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+WHERE [p].[ParcelId] = @__p_0
+2025-06-11 13:20:18.884 -04:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Parcels]
+OUTPUT 1
+WHERE [ParcelId] = @p0;
+2025-06-11 13:20:18.889 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-11 13:20:18.894 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.delete (ParcelService) in 89.852ms
+2025-06-11 13:20:18.895 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:20:18.897 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1015 - 200 null application/json; charset=utf-8 100.214ms
+2025-06-11 13:20:23.746 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1014 - null null
+2025-06-11 13:20:23.749 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:20:23.749 -04:00 [INF] Route matched with {action = "delete", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] delete(Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:20:23.767 -04:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+WHERE [p].[ParcelId] = @__p_0
+2025-06-11 13:20:23.797 -04:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Parcels]
+OUTPUT 1
+WHERE [ParcelId] = @p0;
+2025-06-11 13:20:23.800 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-11 13:20:23.806 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.delete (ParcelService) in 55.9631ms
+2025-06-11 13:20:23.806 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:20:23.808 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1014 - 200 null application/json; charset=utf-8 63.0519ms
+2025-06-11 13:20:28.433 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1013 - null null
+2025-06-11 13:20:28.436 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:20:28.437 -04:00 [INF] Route matched with {action = "delete", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] delete(Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:20:28.454 -04:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+WHERE [p].[ParcelId] = @__p_0
+2025-06-11 13:20:28.484 -04:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Parcels]
+OUTPUT 1
+WHERE [ParcelId] = @p0;
+2025-06-11 13:20:28.488 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-11 13:20:28.493 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.delete (ParcelService) in 55.4051ms
+2025-06-11 13:20:28.493 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:20:28.495 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1013 - 200 null application/json; charset=utf-8 61.9541ms
+2025-06-11 13:20:32.164 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1012 - null null
+2025-06-11 13:20:32.165 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:20:32.165 -04:00 [INF] Route matched with {action = "delete", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] delete(Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:20:32.189 -04:00 [INF] Executed DbCommand (16ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+WHERE [p].[ParcelId] = @__p_0
+2025-06-11 13:20:32.199 -04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Parcels]
+OUTPUT 1
+WHERE [ParcelId] = @p0;
+2025-06-11 13:20:32.202 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-11 13:20:32.204 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.delete (ParcelService) in 37.0057ms
+2025-06-11 13:20:32.204 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:20:32.205 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1012 - 200 null application/json; charset=utf-8 41.0358ms
+2025-06-11 13:20:36.226 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1011 - null null
+2025-06-11 13:20:36.230 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:20:36.231 -04:00 [INF] Route matched with {action = "delete", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] delete(Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:20:36.268 -04:00 [INF] Executed DbCommand (28ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+WHERE [p].[ParcelId] = @__p_0
+2025-06-11 13:20:36.277 -04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Parcels]
+OUTPUT 1
+WHERE [ParcelId] = @p0;
+2025-06-11 13:20:36.278 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-11 13:20:36.279 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.delete (ParcelService) in 48.2375ms
+2025-06-11 13:20:36.280 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:20:36.281 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1011 - 200 null application/json; charset=utf-8 56.0621ms
+2025-06-11 13:22:09.696 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - application/json 154
+2025-06-11 13:22:09.710 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-11 13:22:09.725 -04:00 [INF] Route matched with {action = "create", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] create(ParcelService.DTO.CreateParcelDTO) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:22:09.978 -04:00 [INF] Executed DbCommand (47ms) [Parameters=[@__trackingNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Parcels] AS [p]
+        WHERE [p].[TrackingNumber] = @__trackingNumber_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-11 13:22:10.173 -04:00 [INF] Executed DbCommand (43ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Parcels] ([CreatedDate], [Destination], [Origin], [Receiver], [Sender], [Status], [TrackingNumber])
+OUTPUT INSERTED.[ParcelId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-06-11 13:22:10.239 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'ParcelService.DTO.ParcelDTO'.
+2025-06-11 13:22:10.314 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 588.3165ms
+2025-06-11 13:22:10.314 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-11 13:22:10.315 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 201 null application/json; charset=utf-8 622.1118ms
+2025-06-11 13:27:12.161 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1017 - null null
+2025-06-11 13:27:12.202 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:27:12.206 -04:00 [INF] Route matched with {action = "delete", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] delete(Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:27:12.257 -04:00 [INF] Executed DbCommand (40ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+WHERE [p].[ParcelId] = @__p_0
+2025-06-11 13:27:12.400 -04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'ParcelService.Data.ParcelDbContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method84(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method84(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-11 13:27:12.877 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.delete (ParcelService) in 670.9321ms
+2025-06-11 13:27:12.882 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:27:13.175 -04:00 [ERR] Data is Null. This method or property cannot be called on Null values.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method84(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at ParcelService.Services.ParcelRepository.GetByIdAsync(Int32 id) in C:\Users\bharg\source\repos\ParcelService\ParcelService\Services\ParcelRepository.cs:line 17
+   at ParcelService.Services.ParcelServicecls.deleteparcel(Int32 id) in C:\Users\bharg\source\repos\ParcelService\ParcelService\Services\ParcelServicecls.cs:line 67
+   at ParcelService.Controller.ParcelServiceController.delete(Int32 id) in C:\Users\bharg\source\repos\ParcelService\ParcelService\Controller\ParcelServiceController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ParcelService.CutomErrorHandler.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\bharg\source\repos\ParcelService\ParcelService\CutomErrorHandler\GlobalExceptionMiddleware.cs:line 19
+2025-06-11 13:27:13.613 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1017 - 500 null application/json 1455.5089ms
+2025-06-11 13:34:39.812 -04:00 [INF] User profile is available. Using 'C:\Users\bharg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-11 13:34:40.579 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-11 13:34:40.580 -04:00 [INF] Hosting environment: Development
+2025-06-11 13:34:40.580 -04:00 [INF] Content root path: C:\Users\bharg\source\repos\ParcelService\ParcelService
+2025-06-11 13:34:40.701 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/index.html - null null
+2025-06-11 13:34:41.299 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/index.html - 200 null text/html;charset=utf-8 606.0558ms
+2025-06-11 13:34:41.388 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-11 13:34:41.404 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 7.353ms
+2025-06-11 13:34:41.424 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_vs/browserLink - null null
+2025-06-11 13:34:41.489 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.8138ms
+2025-06-11 13:34:41.717 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - null null
+2025-06-11 13:34:41.851 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 134.8128ms
+2025-06-11 13:35:31.481 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1017 - null null
+2025-06-11 13:35:32.187 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:35:32.298 -04:00 [INF] Route matched with {action = "delete", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] delete(Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:35:37.562 -04:00 [INF] Executed DbCommand (218ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+WHERE [p].[ParcelId] = @__p_0
+2025-06-11 13:35:38.078 -04:00 [INF] Executed DbCommand (71ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Parcels]
+OUTPUT 1
+WHERE [ParcelId] = @p0;
+2025-06-11 13:35:38.198 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-11 13:35:38.256 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.delete (ParcelService) in 5944.492ms
+2025-06-11 13:35:38.258 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.delete (ParcelService)'
+2025-06-11 13:35:38.303 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:44371/api/ParcelService/delete/1017 - 200 null application/json; charset=utf-8 6823.2409ms
+2025-06-11 13:39:25.585 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=10 - null null
+2025-06-11 13:39:25.631 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.Get (ParcelService)'
+2025-06-11 13:39:25.665 -04:00 [INF] Route matched with {action = "Get", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:39:25.852 -04:00 [INF] Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+ORDER BY [p].[CreatedDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-06-11 13:39:25.920 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ParcelService.DTO.ParcelDTO, ParcelService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-11 13:39:25.978 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.Get (ParcelService) in 312.0133ms
+2025-06-11 13:39:25.979 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.Get (ParcelService)'
+2025-06-11 13:39:25.982 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 402.2778ms
+2025-06-11 13:39:57.235 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - application/json 216
+2025-06-11 13:39:57.254 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-11 13:39:57.278 -04:00 [INF] Route matched with {action = "create", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] create(ParcelService.DTO.CreateParcelDTO) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:39:57.729 -04:00 [INF] Executed DbCommand (15ms) [Parameters=[@__trackingNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Parcels] AS [p]
+        WHERE [p].[TrackingNumber] = @__trackingNumber_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-11 13:39:57.922 -04:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Parcels] ([CreatedDate], [Destination], [Origin], [Receiver], [Sender], [Status], [TrackingNumber])
+OUTPUT INSERTED.[ParcelId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-06-11 13:39:58.011 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'ParcelService.DTO.ParcelDTO'.
+2025-06-11 13:39:58.061 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 782.6176ms
+2025-06-11 13:39:58.061 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-11 13:39:58.062 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 201 null application/json; charset=utf-8 829.0516ms
+2025-06-11 13:40:15.490 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - application/json 218
+2025-06-11 13:40:15.493 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-11 13:40:15.494 -04:00 [INF] Route matched with {action = "create", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] create(ParcelService.DTO.CreateParcelDTO) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-11 13:40:15.523 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[@__trackingNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Parcels] AS [p]
+        WHERE [p].[TrackingNumber] = @__trackingNumber_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-11 13:40:15.572 -04:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Parcels] ([CreatedDate], [Destination], [Origin], [Receiver], [Sender], [Status], [TrackingNumber])
+OUTPUT INSERTED.[ParcelId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-06-11 13:40:15.578 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'ParcelService.DTO.ParcelDTO'.
+2025-06-11 13:40:15.584 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 89.6219ms
+2025-06-11 13:40:15.585 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-11 13:40:15.586 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 201 null application/json; charset=utf-8 96.7467ms

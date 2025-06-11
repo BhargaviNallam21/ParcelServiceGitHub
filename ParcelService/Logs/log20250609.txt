@@ -1,0 +1,315 @@
+2025-06-09 14:18:45.426 -04:00 [INF] User profile is available. Using 'C:\Users\bharg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-09 14:18:45.838 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-09 14:18:45.841 -04:00 [INF] Hosting environment: Development
+2025-06-09 14:18:45.842 -04:00 [INF] Content root path: C:\Users\bharg\source\repos\ParcelService\ParcelService
+2025-06-09 14:18:46.026 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger - null null
+2025-06-09 14:18:46.914 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/index.html - null null
+2025-06-09 14:18:46.962 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger - 301 null null 942.79ms
+2025-06-09 14:18:47.119 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/index.html - 200 null text/html;charset=utf-8 206.3748ms
+2025-06-09 14:18:47.162 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/swagger-ui-bundle.js - null null
+2025-06-09 14:18:47.162 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/swagger-ui.css - null null
+2025-06-09 14:18:47.171 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/swagger-ui-standalone-preset.js - null null
+2025-06-09 14:18:47.223 -04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-06-09 14:18:47.223 -04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-06-09 14:18:47.227 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/swagger-ui.css - 200 143943 text/css 65.7916ms
+2025-06-09 14:18:47.242 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 70.3041ms
+2025-06-09 14:18:47.264 -04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-06-09 14:18:47.311 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 149.4504ms
+2025-06-09 14:18:47.311 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-09 14:18:47.316 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 3.0518ms
+2025-06-09 14:18:47.351 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_vs/browserLink - null null
+2025-06-09 14:18:47.456 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.5887ms
+2025-06-09 14:18:47.986 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - null null
+2025-06-09 14:18:48.075 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/favicon-32x32.png - null null
+2025-06-09 14:18:48.078 -04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-06-09 14:18:48.079 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/favicon-32x32.png - 200 628 image/png 4.1089ms
+2025-06-09 14:18:48.294 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 308.8687ms
+2025-06-09 16:23:52.348 -04:00 [INF] User profile is available. Using 'C:\Users\bharg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-09 16:23:52.636 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-09 16:23:52.636 -04:00 [INF] Hosting environment: Development
+2025-06-09 16:23:52.636 -04:00 [INF] Content root path: C:\Users\bharg\source\repos\ParcelService\ParcelService
+2025-06-09 16:23:52.725 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/index.html - null null
+2025-06-09 16:23:53.613 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-09 16:23:53.616 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_vs/browserLink - null null
+2025-06-09 16:23:53.619 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/index.html - 200 null text/html;charset=utf-8 908.8062ms
+2025-06-09 16:23:53.659 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 17.2816ms
+2025-06-09 16:23:53.754 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_vs/browserLink - 200 null text/javascript; charset=UTF-8 138.7541ms
+2025-06-09 16:23:53.823 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - null null
+2025-06-09 16:23:54.066 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 242.4374ms
+2025-06-09 16:24:05.621 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=3 - null null
+2025-06-09 16:24:06.040 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-09 16:24:06.054 -04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-09 16:24:06.056 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=3 - 401 null null 435.0007ms
+2025-06-09 16:25:26.841 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=3 - null null
+2025-06-09 16:25:27.125 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.Get (ParcelService)'
+2025-06-09 16:25:27.282 -04:00 [INF] Route matched with {action = "Get", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-09 16:25:37.015 -04:00 [INF] Executed DbCommand (176ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+ORDER BY [p].[CreatedDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-06-09 16:25:37.188 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ParcelService.DTO.ParcelDTO, ParcelService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-09 16:25:37.206 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.Get (ParcelService) in 9919.5234ms
+2025-06-09 16:25:37.206 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.Get (ParcelService)'
+2025-06-09 16:25:37.213 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=3 - 200 null application/json; charset=utf-8 10372.1266ms
+2025-06-09 16:29:09.383 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - application/json 156
+2025-06-09 16:29:09.400 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:29:09.426 -04:00 [INF] Route matched with {action = "create", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] create(ParcelService.DTO.CreateParcelDTO) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-09 16:29:09.536 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-06-09 16:29:09.597 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 170.2308ms
+2025-06-09 16:29:09.597 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:29:09.598 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 400 null application/problem+json; charset=utf-8 224.2326ms
+2025-06-09 16:29:20.250 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - application/json 155
+2025-06-09 16:29:20.252 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:29:20.253 -04:00 [INF] Route matched with {action = "create", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] create(ParcelService.DTO.CreateParcelDTO) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-09 16:29:25.181 -04:00 [INF] Executed DbCommand (23ms) [Parameters=[@__parcel_TrackingNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Parcels] AS [p]
+        WHERE [p].[TrackingNumber] = @__parcel_TrackingNumber_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-09 16:29:25.321 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 5067.4582ms
+2025-06-09 16:29:25.323 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:29:25.421 -04:00 [ERR] Tracking Number already exists
+ParcelService.CutomErrorHandler.BadRequestException: Tracking Number already exists
+   at ParcelService.Services.ParcelServicecls.createparcel(CreateParcelDTO parcel) in C:\Users\bharg\source\repos\ParcelService\ParcelService\Services\ParcelServicecls.cs:line 46
+   at ParcelService.Controller.ParcelServiceController.create(CreateParcelDTO parcel) in C:\Users\bharg\source\repos\ParcelService\ParcelService\Controller\ParcelServiceController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ParcelService.CutomErrorHandler.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\bharg\source\repos\ParcelService\ParcelService\CutomErrorHandler\GlobalExceptionMiddleware.cs:line 19
+2025-06-09 16:29:25.577 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 400 null application/json 5328.0259ms
+2025-06-09 16:29:34.740 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - application/json 155
+2025-06-09 16:29:34.741 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:29:34.741 -04:00 [INF] Route matched with {action = "create", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] create(ParcelService.DTO.CreateParcelDTO) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-09 16:29:34.864 -04:00 [INF] Executed DbCommand (14ms) [Parameters=[@__parcel_TrackingNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Parcels] AS [p]
+        WHERE [p].[TrackingNumber] = @__parcel_TrackingNumber_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-09 16:29:35.148 -04:00 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Parcels] ([CreatedDate], [Destination], [Origin], [Receiver], [Sender], [Status], [TrackingNumber])
+OUTPUT INSERTED.[ParcelId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-06-09 16:29:35.203 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'ParcelService.DTO.ParcelDTO'.
+2025-06-09 16:29:35.225 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 483.5657ms
+2025-06-09 16:29:35.225 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:29:35.225 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 201 null application/json; charset=utf-8 485.6774ms
+2025-06-09 16:29:51.212 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - application/json 148
+2025-06-09 16:29:51.213 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:29:51.214 -04:00 [INF] Route matched with {action = "create", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] create(ParcelService.DTO.CreateParcelDTO) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-09 16:29:51.233 -04:00 [INF] Executed DbCommand (16ms) [Parameters=[@__parcel_TrackingNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Parcels] AS [p]
+        WHERE [p].[TrackingNumber] = @__parcel_TrackingNumber_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-09 16:29:51.253 -04:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Parcels] ([CreatedDate], [Destination], [Origin], [Receiver], [Sender], [Status], [TrackingNumber])
+OUTPUT INSERTED.[ParcelId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-06-09 16:29:51.254 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'ParcelService.DTO.ParcelDTO'.
+2025-06-09 16:29:51.256 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 42.453ms
+2025-06-09 16:29:51.257 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:29:51.257 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 201 null application/json; charset=utf-8 44.9053ms
+2025-06-09 16:30:04.826 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - application/json 146
+2025-06-09 16:30:04.827 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:30:04.827 -04:00 [INF] Route matched with {action = "create", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] create(ParcelService.DTO.CreateParcelDTO) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-09 16:30:04.835 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__parcel_TrackingNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Parcels] AS [p]
+        WHERE [p].[TrackingNumber] = @__parcel_TrackingNumber_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-09 16:30:04.856 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Parcels] ([CreatedDate], [Destination], [Origin], [Receiver], [Sender], [Status], [TrackingNumber])
+OUTPUT INSERTED.[ParcelId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-06-09 16:30:04.857 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'ParcelService.DTO.ParcelDTO'.
+2025-06-09 16:30:04.859 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 31.5502ms
+2025-06-09 16:30:04.859 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:30:04.860 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 201 null application/json; charset=utf-8 34.2607ms
+2025-06-09 16:30:14.044 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - application/json 148
+2025-06-09 16:30:14.046 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:30:14.046 -04:00 [INF] Route matched with {action = "create", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] create(ParcelService.DTO.CreateParcelDTO) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-09 16:30:14.083 -04:00 [INF] Executed DbCommand (32ms) [Parameters=[@__parcel_TrackingNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Parcels] AS [p]
+        WHERE [p].[TrackingNumber] = @__parcel_TrackingNumber_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-09 16:30:14.108 -04:00 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Parcels] ([CreatedDate], [Destination], [Origin], [Receiver], [Sender], [Status], [TrackingNumber])
+OUTPUT INSERTED.[ParcelId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-06-09 16:30:14.110 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'ParcelService.DTO.ParcelDTO'.
+2025-06-09 16:30:14.113 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 66.1612ms
+2025-06-09 16:30:14.113 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:30:14.114 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 201 null application/json; charset=utf-8 71.0755ms
+2025-06-09 16:30:22.472 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - application/json 149
+2025-06-09 16:30:22.474 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:30:22.474 -04:00 [INF] Route matched with {action = "create", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] create(ParcelService.DTO.CreateParcelDTO) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-09 16:30:22.493 -04:00 [INF] Executed DbCommand (16ms) [Parameters=[@__parcel_TrackingNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Parcels] AS [p]
+        WHERE [p].[TrackingNumber] = @__parcel_TrackingNumber_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-09 16:30:22.503 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Parcels] ([CreatedDate], [Destination], [Origin], [Receiver], [Sender], [Status], [TrackingNumber])
+OUTPUT INSERTED.[ParcelId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-06-09 16:30:22.504 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'ParcelService.DTO.ParcelDTO'.
+2025-06-09 16:30:22.508 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 33.2496ms
+2025-06-09 16:30:22.508 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:30:22.509 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 201 null application/json; charset=utf-8 37.3242ms
+2025-06-09 16:30:30.383 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - application/json 151
+2025-06-09 16:30:30.384 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:30:30.385 -04:00 [INF] Route matched with {action = "create", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] create(ParcelService.DTO.CreateParcelDTO) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-09 16:30:30.393 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__parcel_TrackingNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Parcels] AS [p]
+        WHERE [p].[TrackingNumber] = @__parcel_TrackingNumber_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-09 16:30:30.408 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Parcels] ([CreatedDate], [Destination], [Origin], [Receiver], [Sender], [Status], [TrackingNumber])
+OUTPUT INSERTED.[ParcelId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-06-09 16:30:30.410 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'ParcelService.DTO.ParcelDTO'.
+2025-06-09 16:30:30.412 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 27.4471ms
+2025-06-09 16:30:30.413 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-09 16:30:30.414 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 201 null application/json; charset=utf-8 30.9139ms
+2025-06-09 16:30:38.439 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=3 - null null
+2025-06-09 16:30:38.440 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.Get (ParcelService)'
+2025-06-09 16:30:38.441 -04:00 [INF] Route matched with {action = "Get", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-09 16:30:38.452 -04:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+ORDER BY [p].[CreatedDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-06-09 16:30:38.482 -04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'ParcelService.Data.ParcelDbContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method20(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method20(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-09 16:30:38.629 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.Get (ParcelService) in 187.831ms
+2025-06-09 16:30:38.629 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.Get (ParcelService)'
+2025-06-09 16:30:38.697 -04:00 [ERR] Data is Null. This method or property cannot be called on Null values.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method20(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ParcelService.Services.ParcelServicecls.GetAllParcels(Int32 pagenumber, Int32 pagesize) in C:\Users\bharg\source\repos\ParcelService\ParcelService\Services\ParcelServicecls.cs:line 32
+   at ParcelService.Controller.ParcelServiceController.Get(Int32 pageNumber, Int32 pageSize) in C:\Users\bharg\source\repos\ParcelService\ParcelService\Controller\ParcelServiceController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ParcelService.CutomErrorHandler.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\bharg\source\repos\ParcelService\ParcelService\CutomErrorHandler\GlobalExceptionMiddleware.cs:line 19
+2025-06-09 16:30:38.703 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=3 - 500 null application/json 264.6251ms
+2025-06-09 16:32:34.368 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=3 - null null
+2025-06-09 16:32:34.387 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.Get (ParcelService)'
+2025-06-09 16:32:34.387 -04:00 [INF] Route matched with {action = "Get", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, Int32) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-09 16:32:34.433 -04:00 [INF] Executed DbCommand (29ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ParcelId], [p].[CreatedDate], [p].[Destination], [p].[Origin], [p].[Receiver], [p].[Sender], [p].[Status], [p].[TrackingNumber]
+FROM [Parcels] AS [p]
+ORDER BY [p].[CreatedDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-06-09 16:32:34.460 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ParcelService.DTO.ParcelDTO, ParcelService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-09 16:32:34.466 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.Get (ParcelService) in 78.0794ms
+2025-06-09 16:32:34.466 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.Get (ParcelService)'
+2025-06-09 16:32:34.469 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44371/api/ParcelService/getparcels?pageNumber=1&pageSize=3 - 200 null application/json; charset=utf-8 100.6791ms
+2025-06-09 17:14:28.689 -04:00 [INF] User profile is available. Using 'C:\Users\bharg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-09 17:14:29.507 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-09 17:14:29.514 -04:00 [INF] Hosting environment: Development
+2025-06-09 17:14:29.515 -04:00 [INF] Content root path: C:\Users\bharg\source\repos\ParcelService\ParcelService
+2025-06-09 17:14:29.727 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/index.html - null null
+2025-06-09 17:14:30.495 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/index.html - 200 null text/html;charset=utf-8 797.5798ms
+2025-06-09 17:14:30.540 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-09 17:14:30.549 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 8.0536ms
+2025-06-09 17:14:30.568 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_vs/browserLink - null null
+2025-06-09 17:14:30.643 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.3178ms
+2025-06-09 17:14:31.064 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - null null
+2025-06-09 17:14:31.379 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 315.1146ms
+2025-06-09 17:15:27.591 -04:00 [INF] User profile is available. Using 'C:\Users\bharg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-09 17:15:27.949 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-09 17:15:27.956 -04:00 [INF] Hosting environment: Development
+2025-06-09 17:15:27.957 -04:00 [INF] Content root path: C:\Users\bharg\source\repos\ParcelService\ParcelService
+2025-06-09 17:15:27.988 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/index.html - null null
+2025-06-09 17:15:28.412 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-09 17:15:28.414 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_vs/browserLink - null null
+2025-06-09 17:15:28.412 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/index.html - 200 null text/html;charset=utf-8 430.8889ms
+2025-06-09 17:15:28.424 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 11.8795ms
+2025-06-09 17:15:28.491 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.0836ms
+2025-06-09 17:15:28.530 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - null null
+2025-06-09 17:15:28.825 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 294.789ms
+2025-06-09 21:04:26.517 -04:00 [INF] User profile is available. Using 'C:\Users\bharg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-09 21:04:27.149 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-09 21:04:27.150 -04:00 [INF] Hosting environment: Development
+2025-06-09 21:04:27.150 -04:00 [INF] Content root path: C:\Users\bharg\source\repos\ParcelService\ParcelService
+2025-06-09 21:04:27.464 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/index.html - null null
+2025-06-09 21:04:28.804 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-09 21:04:28.804 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_vs/browserLink - null null
+2025-06-09 21:04:28.812 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/index.html - 200 null text/html;charset=utf-8 1401.1229ms
+2025-06-09 21:04:28.841 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 18.0685ms
+2025-06-09 21:04:28.990 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_vs/browserLink - 200 null text/javascript; charset=UTF-8 187.7403ms
+2025-06-09 21:04:29.087 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - null null
+2025-06-09 21:04:29.477 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 389.5014ms
