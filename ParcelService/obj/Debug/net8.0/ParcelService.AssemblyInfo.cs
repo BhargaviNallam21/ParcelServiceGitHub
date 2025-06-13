@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParcelService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb2927f5616767aff46f2aa941f868f9bec55662")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79c0a93b34775135898d1dd697165b1aec39d1c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParcelService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParcelService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
