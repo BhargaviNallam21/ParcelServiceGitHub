@@ -23,7 +23,7 @@ namespace ParcelService.Controller
             var res = await _parcelService.GetAllParcels(pageNumber, pageSize);
             return Ok(res);
         }
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<IActionResult> GetParcel(int id)
         {
             var result = await _parcelService.GetParcelBYID(id);

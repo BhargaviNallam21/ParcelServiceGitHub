@@ -263,3 +263,43 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
 2025-06-13 12:19:20.608 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 908.4524ms
 2025-06-13 12:19:20.608 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
 2025-06-13 12:19:20.610 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 201 null application/json; charset=utf-8 983.0829ms
+2025-06-13 13:16:08.532 -04:00 [INF] User profile is available. Using 'C:\Users\bharg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-13 13:16:08.891 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-13 13:16:08.894 -04:00 [INF] Hosting environment: Development
+2025-06-13 13:16:08.894 -04:00 [INF] Content root path: C:\Users\bharg\source\repos\ParcelService\ParcelService
+2025-06-13 13:16:08.998 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/index.html - null null
+2025-06-13 13:16:09.383 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-13 13:16:09.384 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/index.html - 200 null text/html;charset=utf-8 392.1157ms
+2025-06-13 13:16:09.387 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 3.8831ms
+2025-06-13 13:16:09.398 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/_vs/browserLink - null null
+2025-06-13 13:16:09.455 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.0782ms
+2025-06-13 13:16:09.490 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - null null
+2025-06-13 13:16:09.628 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44371/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.3272ms
+2025-06-13 13:16:42.583 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - application/json 210
+2025-06-13 13:16:43.428 -04:00 [INF] Executing endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-13 13:16:43.616 -04:00 [INF] Route matched with {action = "create", controller = "ParcelService"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] create(ParcelService.DTO.CreateParcelDTO) on controller ParcelService.Controller.ParcelServiceController (ParcelService).
+2025-06-13 13:16:50.901 -04:00 [INF] Executed DbCommand (286ms) [Parameters=[@__trackingNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Parcels] AS [p]
+        WHERE [p].[TrackingNumber] = @__trackingNumber_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-13 13:16:51.975 -04:00 [INF] Executed DbCommand (115ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Parcels] ([CreatedDate], [Destination], [Origin], [Receiver], [Sender], [Status], [TrackingNumber])
+OUTPUT INSERTED.[ParcelId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-06-13 13:16:52.187 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'ParcelService.DTO.ParcelDTO'.
+2025-06-13 13:16:52.351 -04:00 [INF] Executed action ParcelService.Controller.ParcelServiceController.create (ParcelService) in 8720.3967ms
+2025-06-13 13:16:52.354 -04:00 [INF] Executed endpoint 'ParcelService.Controller.ParcelServiceController.create (ParcelService)'
+2025-06-13 13:16:52.400 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44371/api/ParcelService/Create - 201 null application/json; charset=utf-8 9817.2099ms
+2025-06-13 13:18:52.749 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44371/api/ParcelService/Create - application/json 142
+2025-06-13 13:18:52.832 -04:00 [INF] CORS policy execution failed.
+2025-06-13 13:18:52.833 -04:00 [INF] Request origin https://localhost:44371 does not have permission to access the resource.
+2025-06-13 13:18:52.856 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-13 13:18:52.874 -04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-13 13:18:52.879 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44371/api/ParcelService/Create - 401 null null 130.1561ms
