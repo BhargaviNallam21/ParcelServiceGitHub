@@ -1,19 +1,74 @@
-# ASP.NET Core
-# Build and test ASP.NET Core projects targeting .NET Core.
-# Add steps that run tests, create a NuGet package, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
-
 trigger:
-- main
+  - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'windows-latest'
 
 variables:
-  buildConfiguration: 'Release'
+  - group: SonarTokens       # You can keep this if you need other secrets, but no Sonar token needed here
+  - name: buildConfiguration
+    value: 'Release'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
-- checkout: self
-  fetchDepth: 0
+  # Step 0: Install Java 11 (required by SonarScanner)
+  - task: JavaToolInstaller@0
+    inputs:
+      versionSpec: '11'
+      jdkArchitectureOption: 'x64'
+      jdkSourceOption: 'PreInstalled'
+    displayName: 'Install Java 11'
+
+  # Step 1: Install .NET 8 SDK
+  - task: UseDotNet@2
+    inputs:
+      packageType: 'sdk'
+      version: '8.0.x'
+    displayName: 'Install .NET 8 SDK'
+
+  # Step 2: Prepare SonarCloud analysis
+  - task: SonarCloudPrepare@1
+    inputs:
+      SonarCloud: 'sonarconnectionParcelService'       # <-- Your SonarCloud service connection name here
+      organization: 'upsorgsonar'                      # Your SonarCloud org key (as in SonarCloud UI)
+      scannerMode: 'MSBuild'                           # Using MSBuild scanner for .NET projects
+      projectKey: 'UPSOrg_ParcelServiceGitHub'        # Your SonarCloud project key
+      projectName: 'ParcelServiceGitHub'                     # Optional, for display in SonarCloud
+    displayName: 'Prepare SonarCloud Analysis'
+
+  # Step 3: Restore and build your solution
+  - script: |
+      dotnet restore
+      dotnet build ParcelService.sln --configuration $(buildConfiguration) --verbosity detailed
+    displayName: 'Restore and Build'
+
+  # Step 4: Run tests and collect code coverage
+  - script: |
+      dotnet test ParcelService.sln --configuration $(buildConfiguration) --no-build --collect:"XPlat Code Coverage" --verbosity detailed
+    displayName: 'Run Tests and Collect Coverage'
+
+  # Step 5: Run SonarCloud analysis
+  - task: SonarCloudAnalyze@1
+    displayName: 'Run SonarCloud Analysis'
+
+  # Step 6: Publish SonarCloud results
+  - task: SonarCloudPublish@1
+    inputs:
+      pollingTimeoutSec: '300'  # Optional, increase if analysis takes longer
+    displayName: 'Publish SonarCloud Results'
+
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'publish'
+      publishWebProjects: true
+      arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+      zipAfterPublish: true
+    displayName: 'Publish Project'
+
+     # Step 8: Deploy to Azure App Service
+  - task: AzureWebApp@1
+    inputs:
+      azureSubscription: 'ParcelazureServiceConnection'    # Name of your Azure RM service connection
+      appType: 'webApp'
+      appName: 'ParcelServiceWebapp'                         # Name of your Azure App Service
+      package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+    displayName: 'Deploy to Azure App Service'
