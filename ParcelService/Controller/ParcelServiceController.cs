@@ -17,7 +17,7 @@ namespace ParcelService.Controller
             _parcelService = parcelService;
 
         }
-        [HttpGet("getparcels")]
+        [HttpGet]
         public async Task<IActionResult> Get(int pageNumber = 1, int pageSize = 3)
         {
             var res = await _parcelService.GetAllParcels(pageNumber, pageSize);
